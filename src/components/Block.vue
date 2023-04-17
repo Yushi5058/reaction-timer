@@ -25,11 +25,11 @@
                     this.reactionTime += 10
                 }, 10)
         },
-
-            },
             stopTimer() {
                 clearInterval(this.timer)
+                this.$emit('end', this.reactionTime)
     }
+}
 }
 </script>
 

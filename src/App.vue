@@ -1,27 +1,37 @@
 <template>
 <h1>Yushi Reaction Timer</h1>
 <button @click="start" :disabled="isPlaying">play</button>
-<Block  v-if="isPlaying" :delay="delay"/>
+<Block  v-if="isPlaying" :delay="delay" @end="endGame"/>
+<Results v-if="showResults" :score="score" />
 </template>
 
 <script>
-import Block from './components/Block.vue'
-export default {
-  name: 'App',
-  components: { Block },
-  data() {
-      return {
-          isPlaying: false,
-          delay: null
-      }
-  },
-  methods: {
-      start() {
-          this.delay = 2000 + Math.random() * 5000
-          this.isPlaying = true
-          }
-          }
-}
+    import Block from './components/Block.vue'
+    import Results from './components/Results.vue'
+    export default {
+        name: 'App',
+        components: { Block, Results },
+        data() {
+            return {
+                isPlaying: false,
+                delay: null,
+                score: null,
+                showResults: false
+            }
+        },
+        methods: {
+            start() {
+                this.delay = 2000 + Math.random() * 5000
+                this.isPlaying = true
+            },
+            endGame(reactionTime) {
+                this.score = reactionTime
+                this.isPlaying = false
+                this.showResults = true
+                this.showResults = false
+            }
+        }
+    }
 </script>
 
 <style>
