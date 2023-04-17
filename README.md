@@ -12,6 +12,7 @@ The project is only used for educational purposes and for personal purposes.
 
 Huge thanks to The Net Ninja for this tutorial. 
 Here some links where you can find him:
+
 [Youtube](https://www.youtube.com/@NetNinja)
 
 [Instagram](https://www.instagram.com/thenetninja/)
