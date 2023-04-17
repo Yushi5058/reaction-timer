@@ -13,8 +13,11 @@ The project is only used for educational purposes and for personal purposes.
 Huge thanks to The Net Ninja for this tutorial. 
 Here some links where you can find him:
 [Youtube](https://www.youtube.com/@NetNinja)
+
 [Instagram](https://www.instagram.com/thenetninja/)
+
 [Twitter](https://twitter.com/thenetninjauk)
+
 [Udemy](https://www.udemy.com/user/47fd83f6-5e4a-4e87-a0f0-519ac51f91b6/)
 
 
@@ -31,6 +34,7 @@ able to learn more about this amazing framework.
 
 # Links used 
 -Net Ninja Youtube Channel / Playlist Vue 3 (see the first section).
+
 -ChatGPT 3.5 free version to fix some errors on :checkhealth in NeoVim.
 
 
